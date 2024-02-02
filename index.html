@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assets/js/game.obf.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="title-screen" id="title-screen">
+        <h1 class="title-screen-title">The Color Game</h1>
+        <div class="title-screen-subtitle"></div>
+        <button class="title-screen-button" onclick="start()">START</button>
+    </div>
+    <header id="header" style="display: none;">
+        <div>Level: <span id="level">1</span></div>
+        <div>The Color Game</div>
+        <div><span id="timer">00:00:00</span></div>
+    </header>
+    <div class="game">
+        <div class="items" id="items">
+        </div>
+        <div class="dropzones" id="dropzones">
+        </div>
+    </div>
+</body>
+
+</html>

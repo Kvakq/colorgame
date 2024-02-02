@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    font-family: cursive;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: calc(100% - 5rem);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game>div {
+    width: 50%;
+}
+
+.title-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 3rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 4rem;
+}
+
+.dropzone > .item {
+    font-size: 1rem;
+}
+
+header {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 6rem;
+    height: 10rem;
+}
+
+.title-screen-button {
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.item {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dropzones {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-template-rows: 15rem 15rem;
+    align-items: center;
+    object-position: center;
+}
+
+.dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 10rem;
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+.dropzone.red {
+    background-color: red;
+}
+
+.dropzone.green {
+    background-color: lightgreen;
+}
+
+.dropzone.blue {
+    background-color: blue;
+}
+
+.dropzone.purple {
+    background-color: purple;
+}
+
+.dropzone.brown {
+    background-color: rgb(102, 73, 73);
+}
+
+.dropzone.orange {
+    background-color: rgb(255, 106, 0);
+}
+
+.dropzone.pink {
+    background-color: rgb(255, 37, 255);
+}
+
+.dropzone.yellow {
+    background-color: rgb(255, 240, 37);
+}
+
+.dropzone.cyan {
+    background-color: rgb(37, 230, 255);
+    ;
+}
+
+/*ITEM COLORS*/
+
+.item.red {
+    color: red;
+}
+
+.item.green {
+    color: lightgreen;
+}
+
+.item.brown {
+    color: rgb(102, 73, 73);
+}
+
+.item.blue {
+    color: blue;
+}
+
+.item.purple {
+    color: purple;
+}
+
+.item.orange {
+    color: rgb(255, 106, 0);
+}
+
+.item.pink {
+    color: rgb(255, 37, 255);
+}
+
+.item.yellow {
+    color: rgb(255, 240, 37);
+}
+
+.item.cyan {
+    color: rgb(37, 230, 255);
+}
+
+.item {
+    transform: 0.5s all;
+    cursor: pointer;
+}
+
+.dragging {
+    font-size: xx-large;
+    cursor: grabbing;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.parallelogram {
+    transform: skew(20deg);
+}
+
+.rectangle {
+    height: 5rem;
+    margin-top: 2.5rem;
+}
